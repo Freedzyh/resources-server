@@ -23,4 +23,9 @@ public class TestController {
     public Result<String> test(@RequestParam("request") String request) {
         return testService.test(request);
     }
+
+    @GetMapping("/testString2")
+    public Result<String> test2(@RequestParam("request") String request) {
+        return testService.test(request);
+    }
 }
